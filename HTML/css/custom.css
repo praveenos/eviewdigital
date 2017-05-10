@@ -303,7 +303,7 @@ span.round-tab:hover { color: #fff;}
 li.active-menu2 .fa-sticky-note, li.active-menu2 .fa-book, li.active-menu2 .fa-folder-open-o{font-size:26px;vertical-align:middle;}
 
 .ques-format ul{padding-left:15px;}
-.ques-format ul li{display:inline-block;padding-right:28px;color:#47143d;}
+.ques-format ul li{display:inline-block;padding-right:28px;color:#000;}
 .ques-format ul li a{color:#47143d;}
 .ques-format ul li a:hover{color:#b99750;font-weight:bold;}
 .ques-format ul li active{color:#b99750;}
@@ -733,74 +733,33 @@ footer p:first-child img { width:130px;}
 .sec-inner{width:92%; margin:0 auto;}
 .sec-inner-white{background:#fff; padding:20px;}
 
+.grey-box{background:#cacaca;padding:20px 10px 20px 10px;color:#333 !important; text-transform:uppercase}
+.grey-box:hover{background:#b99750 !important;color:#fff !important;}
+
 .btn-grey{background:#a9acae;color:#fff;padding:10px 20px; font-size:16px; text-transform:uppercase; border:none}
 .btn-purple{background:#47143d;color:#fff;padding:10px 20px; font-size:16px; text-transform:uppercase; border:none}
 .ui-dialog{z-index:1000 !important;}
 #competency1,#competency2,#competency3,#competency4,#competency5,#competency6,#competency7,#competency8,#competency9,#competency10{display:inline-block;}
+#assessor1,#assessor2,#assessor3,#assessor4,#assessor5,#assessor6,#assessor7,#assessor8,#assessor9,#assessor10{display:inline-block;}
 .terms_cont{padding:3em 3em 0 3em;}
 
 
 /* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
+.switch {position:relative;display:inline-block;width:60px;height:34px;}
 
 /* Hide default HTML checkbox */
 .switch input {display:none;}
 
 /* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #b99750;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
+.slider {position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+.slider:before {position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+input:checked + .slider {background-color:#b99750;}
+input:focus + .slider {box-shadow:0 0 1px #2196F3;}
+input:checked + .slider:before {-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}
 /* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
+.slider.round {border-radius:34px;}
+.slider.round:before {border-radius:50%;}
 .footer{border-top:1px solid #dedede;background:#f9f9f9;padding:0;position:fixed;bottom:0;width:100%;}
-
 /* Modal window Styles */
 .m-bg{background:#000;height:300px;color:#b99750;}
 .m-body{text-align:center;padding-top:90px;}
@@ -849,6 +808,8 @@ input:checked + .slider:before {
 {
 .video-next-prev{text-align:right;}
 .video-panel{box-shadow:-8px 0 8px #ddd;padding-bottom:80px;}
+#header_primary ul li a{ font-size:14px !important;}
+#header_primary ul li { margin-right:30px}
 }
 
 /* Laptop */
@@ -856,6 +817,8 @@ input:checked + .slider:before {
 {
 .video-next-prev{text-align:right;}
 .video-panel{box-shadow:-8px 0 8px #ddd;padding-bottom:80px;}
+#header_primary ul li a{ font-size:20px !important;}
+#header_primary ul li { margin-right:40px}
 }
 
 @media only screen and (min-width:1500px)
