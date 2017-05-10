@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Evueme</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="comp-header">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="comp-logo"><img class="img-responsive" src="images/logo_applicant_topnav.png"></div>
+    </div>
+    
+	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    <div class="comp-contact pull-right">
+    <p><strong>For any support contact:</strong></p>
+    <h5>+ 91 9341 555 666 | <a href="mailto:care@evueme.com">care@evueme.com</a></h5>
+    <p><strong>Timing:</strong> 07:00 hrs to 22:00hrs</p>
+    </div>
+    </div>
+    
+</div>
+</div>
+</div>
+
+<div class="container m-top-50">
+<div class="row terms">    
+
+<div class="col-md-8 col-md-offset-2 terms_cont" style="background:#f5f5f5;">        
+<h3 class="text-center"><strong>Terms of Use</strong></h3>   
+<p><textarea readonly id="sidebar-wrapper" name="licenseAgreement" rows="15" cols="45" style="background:none;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat pre
+</textarea>
+</p>
+</div>
+
+<div class="col-md-8 col-md-offset-2 terms_cnrfm" style="background:#f1f1f1;padding:40px;">
+<ul class="no-padding mb-20">
+<li><input class="dagree"  id="checkme" name="button" type="checkbox" value="Submit" disabled> I agree to the above terms & conditions</li>
+<li><input class="dagree"  id="disagree" name="button" type="checkbox" value="Submit" data-toggle="modal" disabled/> I disagree</li>   
+</ul>
+
+<span class="tool-tip" data-toggle="tooltip" data-placement="right" title="Please select: I agree to the above Terms & Conditions" rel="tooltip">
+<button name="sendNewSms" id="sendNewSms" type="button" class="button bt-main" disabled><span>Proceed</span></button>
+</span>
+
+<div style="display:none;" class="modal fade" id="myModal3" role="dialog">
+<div class="modal-dialog modal-sml">    
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close txt-main" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" style="background:#fff;"></i></button>
+</div>
+
+<div class="modal-body">
+<div class="add-applicant">
+<h3 class="text-center"><strong>Feedback</strong></h3>
+<h4 class="clr-black">You are valuable to us. Please give us your reasons for disagreement.</h4>
+<textarea class="queries form-control" rows="4" cols="50" placeholder="Enter your reason for disagreement"></textarea>            
+<button id="submit_queries" type="button" class="button bt-main" style="width:100%;"><span>SUBMIT</span></button>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+
+<div class="col-md-5 pull-right text-right">
+Powered by: <img src="images/logo_ft.png" class="img-responsive">
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/jquery.niceScroll.js"></script>
+<script language="javascript">
+	$(document).ready(function(){
+	$('#sidebar-wrapper, #disagree').scroll(function () {
+    if ($(this).scrollTop() + $(this).innerHeight() +2 >= $(this)[0].scrollHeight) {
+        $('#checkme, #disagree').removeAttr('disabled');
+    }
+});
+	$("#disagree").on('change', function(){
+			if ($('#disagree').is(':checked')) {		
+				$('#myModal3').modal('show');
+				$('#sendNewSms').hide();	
+				$('.tool-tip').css('display','none');
+			}else{
+				
+			}
+	});	
+	$("#checkme").on('change', function(){
+			if ($('#checkme').is(':checked')) {		
+				$('#sendNewSms').show();
+				$('.terms span').removeAttr('data-original-title');
+				$('.tool-tip').css('display','inline-block');
+			}else{
+				
+			}
+	});	
+	$("#sidebar-wrapper").niceScroll({cursorcolor:"#4ECDC4",cursorfixedheight: false,cursorborder: "none"});
+	$('input').click(function() {
+                var input_class = $(this).attr('class');
+
+                $('.'+input_class).prop('checked', false);
+
+                $(this).prop('checked', true);
+            });
+	
+		$('[data-toggle="tooltip"]').tooltip()
+
+});
+var checker = document.getElementById('checkme');
+var sendbtn = document.getElementById('sendNewSms');
+checker.onchange = function() {
+  sendbtn.disabled = ! this.checked;
+ 
+};
+</script>
+<script src="js/custom.js"></script> 
+</body></html>

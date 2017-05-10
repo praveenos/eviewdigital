@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>evueMe</title>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-select.min.css">
+<link href="plugins/datatables/jquery.dataTables.min.css" rel="stylesheet">
+<link href="plugins/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
+<link href="plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet">
+<link href="plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<link href="plugins/bootstrap-editable/bootstrap-editable.css" rel="stylesheet">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav id="header_primary" class="navbar navbar-inverse navbar-fixed-top nav_primary" role="navigation">
+<div class="container-fluid">
+	<div class="logo"><a href="index.html"><img src="images/logo_topnav.png" alt="evueMe" class="img-responsive"></a></div>
+
+    <div class="navbar-header">
+    <button id="navbar-toggle-primary" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>            
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav navbar-right">
+    <li><a href="#">Job Position</a></li>
+    <li><a class="active-menu" href="#">Interviews</a></li>
+    <li><a href="#">Assessments</a></li>
+    <li><a href="#">Dashboard</a></li>
+    <li style="margin-right:25px;"><a href="#">Settings</a></li>                    
+    </ul>
+    </div>
+</div>
+</nav>
+
+<!-- Primary Content starts --> 
+  
+<main class="create-question" style="margin-top:120px;"> 
+<div class="container">
+
+<div class="row">
+<div class="col-md-12">
+<div class="primary-cont">
+
+<div class="wizard">
+<div class="wizard-inner">
+    <div class="connecting-line"></div>
+    <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1"><span class="round-tab">1</span><h4>Define Interview</h4></a></li>
+    <!--<li role="presentation" class="active"><a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2"><span class="round-tab">2</span><h4>Create Questionaire</h4></a></li>-->
+    <li role="presentation" class="active" style="margin-left:400px;"><a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 2"><span class="round-tab">2</span><h4>Create Questionaire</h4></a></li>
+    </ul>
+</div>
+</div>
+
+<!-- Start tabs -->
+<div class="tab-content">
+
+<!-- Step 1 tab starts -->
+<div class="tab-pane" role="tabpanel" id="step1">
+	<ul class="list-inline pull-right">
+	<li><button type="button" class="btn btn-primary next-step mt-15">Save and continue</button></li>
+	</ul>
+</div>
+<!-- Step 1 tab ends -->
+
+<!-- Step 2 tab starts -->
+<div class="tab-pane active" role="tabpanel" id="step2">
+
+<div class="create-quesDMG">
+<div class="col-lg-12 p-top-50">
+<h4><strong>Create Questionnarie for <a href="#">DGM Marketing</a> (TMJB30)</strong></h4>
+
+<!-- inner panel starts -->
+<div class="p-lt-30">    
+
+	<div class="competencies-eval mt-30"> 
+    <h5>Competencies being evaluated</h5>
+    <div class="get-text">                        
+        <ul class="no-padding mt-15">
+        <div id="competency1"><li>Sales <a href="#" onClick="hide('competency1')"><span>X</span></a></li></div>
+        <div id="competency2"><li>Marketing <a href="#" onClick="hide('competency2')"><span>X</span></a></li></div>
+        <div id="competency3"><li>Media/PR <a href="#" onClick="hide('competency3')"><span>X</span></a></li></div>
+        <div id="competency4"><li>Results Orientation <a href="#" onClick="hide('competency4')"><span>X</span></a></li></div>
+        <div id="competency5"><li>Crediblity Quotine <a href="#" onClick="hide('competency5')"><span>X</span></a></li></div>
+        <div id="competency6"><li>Valuing Diversity <a href="#" onClick="hide('competency6')"><span>X</span></a></li></div>
+        <div id="competency7"><li>Leading Difference <a href="#" onClick="hide('competency7')"><span>X</span></a></li></div>
+        <div id="competency8"><li>Handling Complexity <a href="#" onClick="hide('competency8')"><span>X</span></a></li></div>
+        <div id="competency9"><li>Outdoor <a href="#" onClick="hide('competency9')"><span>X</span></a></li></div>
+        <div id="competency10"><li>Sales <a href="#" onClick="hide('competency10')"><span>X</span></a></li></div>
+        </ul>                     
+    </div>
+
+    <hr/>
+    <div class="question-type">
+<h5>Question Type <a href="#" title="In video response, applicant's response will be video recorded.<br>
+In audio response only applicant's audio response will be recorded without video." rel="tooltip">&nbsp;&nbsp;&nbsp;<img src="images/icons/icn-info.png"></a></h5>
+</div>
+    <div class="radio_check mt-15">
+    <label class="radio-inline col-xs-6 col-sm-3 col-md-2 col-lg-2"><input type="radio" id="checkbox1" name="mode" value="Video Response">Video Response</label>
+    <label class="radio-inline col-xs-6 col-sm-3 col-md-2 col-lg-2"><input type="radio" id="checkbox2" name="mode" value="Software Code">Audio Response</label>
+    <!--<label class="radio-inline col-xs-6 col-sm-3 col-md-2 col-lg-2"><input type="radio" id="checkbox3" name="mode" value="Audio Response">Software Code</label>
+    <label class="radio-inline col-xs-6 col-sm-3 col-md-2 col-lg-2"><input type="radio" id="checkbox4" name="mode" value="Multiple Choice">Multiple Choice</label>
+    <label class="radio-inline col-xs-6 col-sm-3 col-md-2 col-lg-2"><input type="radio" id="checkbox5" name="mode" value="Fill the Blanks">Fill the Blanks</label>
+    <label class="radio-inline col-xs-6 col-sm-3 col-md-2 col-lg-2"><input type="radio" id="checkbox6" name="mode" value="True / False">True / False</label>-->
+    </div>
+    </div>
+	</div>
+    <div class="clearfix"></div>                        
+
+    <div class="quesFor-interview p-top-50">
+    <h4>Create Questions for Interview</h4>
+    <div class="navbar navbar-default secondary-nav-inner">
+    <ul class="nav navbar-nav secondary-nav-inner">
+    <li class=""><a href="#"><img src="images/icons/new-question-icon.png"> &nbsp;&nbsp;New Question</a></li>
+    <!--<li><a href="#"><img src="images/icons/question-bank-icon.png"> &nbsp;&nbsp;From Question Bank</a></li>
+    <li><a href="#"><img src="images/icons/previous-position-icon.png"> &nbsp;&nbsp;From Previous Position</a></li>-->
+    </ul>
+    </div>
+    <div class="p-top-10"><textarea class="form-control get-ques" rows="5" id="comment" name="comment">In your last project tell me about when something went wrong? How did it affect you? Could you have done anything differently?</textarea></div>
+    
+    <div class="col-md-6">
+    <h5 class="p-top-20"><input type="checkbox" value=""> Enhance Question Format</h5>
+    
+    <div class="ques-format">   
+    <div class="mt-15">
+    <ul class="mt-10 ques-format">
+    <li class="text-center"><i class="fa fa-volume-up"></i> <p><a href="javascript:void(0);" data-toggle="modal" data-target="#myModal">Upload Audio</a><!--<br><a href="javascript:void(0);" data-toggle="modal" data-target="#myModal1">Record Audio</a>--></p></li>
+    <li class="text-center"><i class="fa fa-video-camera"></i> <p><a href="javascript:void(0);" data-toggle="modal" data-target="#myModal2">Upload Video</a> <br> <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal3">Record Video</a></p></li>
+    <li class="text-center"><i class="fa fa-picture-o"></i><p><a href="javascript:void(0);" data-toggle="modal" data-target="#myModal4">Upload <br>Picture</a></p>
+</li>
+    <li class="text-center"><i class="fa fa-file"></i><p><a href="javascript:void(0);" data-toggle="modal" data-target="#myModal5">Upload <br>Document</a></p></li>
+    </ul>
+    
+    </div>
+	</div>
+    </div>
+    <div class="col-md-2 m-top-40 p-all-0"> <div class="added-file"><center><img src="images/uploade-file.jpg"></center><br><center><img src="images/icons/delete.png"></center></div></div>
+     <div class="col-md-4 m-top-70 p-all-0"> <div class="added-file"><img src="images/audio-img.gif" class="img-responsive"><center><img src="images/icons/delete.png" class="m-top-30"></center></div></div>
+
+	</div>
+	<div class="clearfix"></div>
+
+<hr/>
+<div class="col-md-4 col-sm-4 col-xs-12 p-lt-0">
+	<h4>Applicant Response Time</h4>
+	<div class="col-md-4 col-sm-6 col-xs-6 m-bt-20 p-lt-0"><input class="form-control" type="text" name="job-title" value="3 Min"></div>
+	<div class="col-md-4 col-sm-6 col-xs-6 m-bt-20"><input class="form-control" type="text" name="job-title" value="0 Sec"></div>
+</div>
+
+<div class="col-md-4 col-sm-4 col-xs-12 p-lt-0">
+    <h4>Applicant preparation time</h4>
+    <div class="col-md-4 col-sm-6 col-xs-6 m-bt-20 p-lt-0"><input class="form-control" type="text" name="job-title" value="0 Min"></div>
+    <div class="col-md-4 col-sm-6 col-xs-6 m-bt-20"><input class="form-control" type="text" name="job-title" value="6 Sec"></div> 
+</div>
+
+<div class="col-md-4 col-sm-4 col-xs-12 p-lt-0">
+	<h4>No. of retakes allowed</h4>
+	<div class="col-sm-6 col-xs-6 p-lt-0 ">
+    <select name="language" class="form-control">
+    <option value="" disabled="" selected="" hidden="">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select>
+	</div>
+</div>
+<div class="clearfix"></div>
+<hr/>
+
+<!--<h5><input class="anchor-show" type="checkbox" value=""> Anchored Responses</h5>
+<div class="anchor-Response primary-form no-padding no-margin mt-15">                        
+<p>You can add upto 5 anchors to this question here to guide accessors during the digital interview assesment stage</p>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-all-0 m-all-0">
+    <div id="anchor-submit-text">
+    <textarea class="form-control anchor-get-text" rows="5" id="comment1">Quantifies metrics and expresses the contribution in quantifiable term</textarea>
+    <button class="button bt-main mt-15 m-bt-30"><span>Submit Anchor</span></button>
+    </div>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-all-0">
+
+<table class="table-responsive txt-black" width="100%" border="0" cellspacing="0" cellpadding="10">
+<tr>
+<td width="20%">Anchor 1</td>
+<td width="70%">Relevance of his experience to current job context</td>
+<td width="10%"><img src="images/icons/delete.png"></td>
+</tr>
+<tr>
+<td>Anchor 2</td>
+<td>Applicant is able to closely link the goal of the organization with the role contribution</td>
+<td><img src="images/icons/delete.png"></td>
+</tr>
+<tr>
+<td>Anchor 3</td>
+<td>Commonality of the applicants goals to the current context</td>
+<td><img src="images/icons/delete.png"></td>
+</tr>
+<tr>
+<td>Anchor 4</td>
+<td>Evidence of  team work</td>
+<td><img src="images/icons/delete.png"></td>
+</tr>
+</table>-->
+</div>
+
+
+<div class="clearfix"></div>
+
+<div class="nex-session">
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-6 p-lt-0">
+     <button class="button bt-main"><span>Save</span></button>
+    </div>
+    
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-6">
+    <button class="button bt-main pull-right mt-30"><span>+ Add Question</span></button>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+</div><!-- inner panel ends -->
+
+
+<div class="ques-added mt-30">
+    <h4><strong>Questions added so far</strong></h4> 
+    <table class="table" width="95%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td width="5%" class="font-22">1</td>
+    <td width="80%"><a href="">Tell me something about yourself in 3 minutes</a></td>
+    <td width="1%"><i class="fa fa-pencil"></i></td>
+    <td width="1%"><img src="images/icons/delete.png"></td>
+    </tr>  
+    
+    <tr>
+    <td class="font-22">2</td>
+    <td>
+	<textarea name="" cols="" rows="3" class="form-control txt-black">What type of people do you find respond best to your management technique? Tell me about a time when you have had to manage someone
+ who you found difficult? What was the outcome?</textarea>
+
+
+
+
+<!--<div class="col-md-7 col-sm-12 col-xs-12 p-lt-0 m-top-20">
+	<div class="col-md-3 col-sm-3 col-xs-6 m-bt-20 p-lt-0"><input class="form-control text-center" type="text" name="job-title" value="03:00">Response Time</div>
+	<div class="col-md-3 col-sm-3 col-xs-6 m-bt-20"><input class="form-control text-center" type="text" name="job-title" value="00:06">Preparation Time</div>
+	<div class="col-md-3 col-sm-3 col-xs-6 m-bt-20"><select name="language" class="form-control" style=" padding-left:40px;">
+    <option value="" disabled="" selected="" hidden="">0</option>
+    <option value="arabic">1</option>
+    <option value="english">2</option>
+    </select>Retakes</div>-->
+
+
+<div class="col-md-3 col-sm-3 col-xs-12 p-lt-0 p-top-30">
+	<h4>Applicant Response Time</h4>
+	<div class="col-md-4 col-sm-6 col-xs-6 m-bt-20 p-lt-0"><input class="form-control" type="text" name="job-title" value="3 Min"></div>
+	<div class="col-md-4 col-sm-6 col-xs-6 m-bt-20"><input class="form-control" type="text" name="job-title" value="0 Sec"></div>
+</div>
+
+<div class="col-md-3 col-sm-3 col-xs-12 p-lt-0 p-top-30">
+    <h4>Applicant preparation time</h4>
+    <div class="col-md-4 col-sm-6 col-xs-6 m-bt-20 p-lt-0"><input class="form-control" type="text" name="job-title" value="0 Min"></div>
+    <div class="col-md-4 col-sm-6 col-xs-6 m-bt-20"><input class="form-control" type="text" name="job-title" value="6 Sec"></div> 
+</div>
+
+<div class="col-md-3 col-sm-3 col-xs-12 p-lt-0 p-top-30">
+	<h4>No. of retakes allowed</h4>
+	<div class="col-sm-6 col-xs-6 p-lt-0 ">
+    <select name="language" class="form-control">
+    <option value="" disabled="" selected="" hidden="">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select>
+	</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12 p-top-70"><img src="images/icons/save.png" title="Save" alt="Save"></div>
+<div class="clearfix"></div>
+</div>
+	</td>
+    <td><i class="fa fa-pencil"></i></td>
+    <td><img src="images/icons/delete.png"></td>
+	</tr> 
+    </table>
+</div>
+<div class="col-md-12 text-right"><button class="button bt-main"><span>Invite Applicants Now</span></button></div>
+<div class="clearfix"></div>
+
+</div>
+</div>
+</div>
+<!-- Step 2 tab ends -->
+
+</div>
+
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+<footer>
+<div class="container">
+<div class="col-md-12">
+<div class="row">
+<div class="text-center font-12 p-top-30 txt-black">Powered by<br>
+<img src="images/logo_ft.png"><br>
+<a href="http://www.evueme.com" target="_blank">www.evueme.com</a>
+</div>
+
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Modal windows starts-->
+
+<!-- Upload audio modal starts-->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+    
+    <div class="modal-header">     
+    <button type="button" class="close txt-main" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" style="background:#fff;"></i></button>
+    <h3 class="modal-title" id="myModalLabel"> Upload Your Audio</h3>    
+    </div>
+  
+    <div class="modal-body">   
+    
+        <div class="col-md-12 m-bg">
+        <div class="m-body"><i class="fa fa-check-circle-o fa-5x"></i>
+        <p class="font-18">Your audio has been successfully uploaded</p>
+        </div>
+        </div>  
+        
+        <div class="clearfix"></div>
+        
+        <div class="col-md-12 m-all-0 p-all-0 txt-black">
+        <div class="col-md-7 mt-10 font-15">Your audio has been successfully uploaded</div>
+        <div class="col-md-5 mt-10 text-right p-rt-0"><button class="button bt-main"><span>Upload Audio</span></button></div>
+		<div class="clearfix"></div>
+        <p>&nbsp;</p>
+        <p class="font-14">This can be or it can be an audio recording on which you want the applicant to respond..</p>
+        <p>&nbsp;</p>
+        <div class="clearfix"></div>
+        <div class="col-md-9 p-lt-0"> <button class="button bt-main"><span>Hear Recording</span></button><button class="button bt-main"><span>Change Audio</span></button></div>
+        <div class="col-md-3 text-right"><button class="button bt-main"><span>Submit</span></button></div>
+        
+        </div>
+                                 
+   		<div class="clearfix"></div>
+    
+    </div>
+
+</div>
+</div>
+</div>
+<!-- Upload audio modal ends-->
+
+<!--Record Audio Modal starts-->
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+    
+    <div class="modal-header">     
+    <button type="button" class="close txt-main" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" style="background:#fff;"></i></button>
+    <h3 class="modal-title" id="myModalLabel">Record your audio</h3>    
+    </div>
+  
+    <div class="modal-body">
+        <div class="col-md-12 m-bg">
+		<div class="recording-popup">59 Sec</div>
+		<div id="recording-now-popup"><div class="recording-red"></div><br>Recording Now</div>	
+        <div class="m-body-record"><button class="button bt-main"><span>Start Recording</span></button>
+        </div>
+        </div>  
+        
+        <div class="clearfix"></div>
+        
+        <div class="col-md-12 m-all-0 p-all-0 txt-black">
+        <div class="col-md-12 mt-10 font-15">Max Audio lenght permited is 1 Min</div>
+		<div class="clearfix"></div><br>
+       
+        <p class="font-14">This can be an audio recording in your voice to supplement the question asked to give a more personalised feeling to the applicants</p>
+        <div class="clearfix"></div><br>
+        
+        <div class="col-md-9 p-lt-0"><button class="button bt-main"><span>Hear Recording</span></button><button class="button bt-main"><span>Record Again</span></button></div>
+        <div class="col-md-3 text-right"><button class="button bt-main"><span>Submit</span></button></div>
+        
+        </div>
+                                 
+   		<div class="clearfix"></div>
+    
+    </div>
+
+</div>
+</div>
+</div>
+<!--Record Audio modal content Ends-->
+
+<!-- Upload Video modal starts-->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+    
+    <div class="modal-header">     
+    <button type="button" class="close txt-main" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" style="background:#fff;"></i></button>
+    <h3 class="modal-title" id="myModalLabel"> Upload Your Video</h3>    
+    </div>
+  
+    <div class="modal-body">   
+    
+        <div class="col-md-12 m-bg">
+        <div class="m-body"><i class="fa fa-check-circle-o fa-5x"></i>
+        <p class="font-18">Your video has been successfully uploaded</p>
+        </div>
+        </div>  
+        
+        <div class="clearfix"></div>
+        
+        <div class="col-md-12 m-all-0 p-all-0 txt-black">
+        <div class="col-md-8 mt-10 font-15">Max Video upload file size permited is 5 Mb</div>
+        <div class="col-md-4 mt-10 text-right p-rt-0"><button class="button bt-main"><span>Upload Video</span></button></div>
+		<div class="clearfix"></div>
+        <p>&nbsp;</p>
+        <p class="font-14">This can be a video on which you want the applicant to respond.</p>
+        <p>&nbsp;</p>
+        <div class="clearfix"></div>
+        
+        <div class="col-md-9 p-lt-0"><button class="button bt-main"><span>View Recording</span></button><button class="button bt-main"><span>Change Video</span></button></div>
+        <div class="col-md-3 text-right"><button class="button bt-main"><span>Submit</span></button></div>
+        
+        </div>
+                                 
+   		<div class="clearfix"></div>
+    </div>
+</div>
+</div>
+</div>
+<!-- Upload Video modal ends -->
+
+<!--Record Video Modal starts-->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+    
+    <div class="modal-header">     
+    <button type="button" class="close txt-main" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" style="background:#fff;"></i></button>
+    <h3 class="modal-title" id="myModalLabel">Record your video</h3>    
+    </div>
+  
+    <div class="modal-body">    
+        <div class="col-md-12 m-bg">
+		<div class="recording-popup">59 Sec</div>
+		<div id="recording-now-popup"><div class="recording-red"></div><br>Recording Now</div>			
+        <div class="m-body-record"><button class="button bt-main"><span>Start Recording</span></button>
+        </div>
+        </div>  
+        
+        <div class="clearfix"></div>
+        
+        <div class="col-md-12 m-all-0 p-all-0 txt-black">
+        <div class="col-md-12 mt-10 font-15">Max video lenght permited is 1 Min</div>
+		<div class="clearfix"></div><br>
+       
+        <p class="font-14">This can be an video recording of you asking the question to supplement the question and give a more personalized feeling to the applicant.</p>
+        <div class="clearfix"></div><br>
+        
+        <div class="col-md-8 p-lt-0"><button class="button bt-main"><span>View Recording</span></button><button class="button bt-main"><span>Record Again</span></button></div>
+        <div class="col-md-4 text-right"><button class="button bt-main"><span>Submit</span></button></div>
+        
+        </div>
+                                 
+   		<div class="clearfix"></div>
+    
+    </div>
+
+</div>
+</div>
+</div>
+<!--Record Video modal content Ends-->
+
+<!-- Upload Image modal starts-->
+	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+    
+    <div class="modal-header">     
+    <button type="button" class="close txt-main" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" style="background:#fff;"></i></button>
+    <h3 class="modal-title" id="myModalLabel"> Upload Your Picture</h3>    
+    </div>
+  
+    <div class="modal-body">   
+    
+        <div class="col-md-12 m-bg">
+        <div class="m-body"><i class="fa fa-check-circle-o fa-5x"></i>
+        <p class="font-18">Your picture has been successfully uploaded</p>
+        </div>
+        </div>  
+        
+        <div class="clearfix"></div>
+        
+        <div class="col-md-12 m-all-0 p-all-0 txt-black">
+        <div class="col-md-7 mt-10 font-13">Max picture file size permited is 2 MB in JPEG or PNG formats.</div>
+        <div class="col-md-5 mt-10 text-right p-rt-0"><button class="button bt-main"><span>Upload Picture</span></button></div>
+		<div class="clearfix"></div>
+        <p>&nbsp;</p>
+        <p class="font-15">This can be a photo of the interviewer so that applicant can see text of question as well as the interviewer’s photo’s to get a good feel or it can be a picture on which you want the applicant to respond..</p>
+        <div class="clearfix"></div>
+        
+        <div class="col-md-6 p-lt-0"><button class="button bt-main"><span>Change Picture</span></button></div>        
+        <div class="col-md-6 text-right"><button class="button bt-main"><span>Submit</span></button></div>
+        
+        </div>
+                                 
+   		<div class="clearfix"></div>
+    </div>
+</div>
+</div>
+</div>
+<!-- Upload Image modal ends-->
+
+<!--Upload Doc modal content starts -->
+	<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+    
+    <div class="modal-header">     
+   	<button type="button" class="close txt-main" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle" style="background:#fff;"></i></button>
+    <h3 class="modal-title" id="myModalLabel"> Upload Your Document</h3>    
+    </div>
+  
+    <div class="modal-body">   
+    
+        <div class="col-md-12" style="background:url(images/upload-picture-modal-bg.jpg); height:323px;">
+        	<div class="col-md-12 text-center" style="margin-top:100px;"><i class="fa fa-check-circle-o fa-5x"></i></div>
+      	 <div class=" col-md-8 col-md-offset-2" style="background:#b99750; padding:15px 25px; color:#fff; text-align:center;">Your Document has been successfully uploaded </div>  
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="col-md-12 m-all-0 p-all-0 txt-black">
+        <div class="col-md-7 mt-10 font-13">Max document size permited is 2 MB in PDF format.</div>
+        <div class="col-md-5 mt-10 text-right p-rt-0"><button class="button bt-main"><span>Upload Doc</span></button></div>
+		<div class="clearfix"></div>
+        <p>&nbsp;</p>
+        <p class="font-15">This can be a PDF of any powerpoint, word or excel document that you would like to add to supplement the question being asked to the applicant or it can be a PDF on which you want the applicant to respond..</p>
+        <div class="clearfix"></div>
+        
+        <div class="col-md-6 p-lt-0"><button class="button bt-main"><span>Change Document</span></button></div>        
+        <div class="col-md-6 text-right"><button class="button bt-main"><span>Submit</span></button></div>
+        
+        </div>
+                                 
+   		<div class="clearfix"></div>
+    
+    </div>
+
+</div>
+</div>
+</div>
+<!--Upload Doc modal content Ends-->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+<script src="js/dataTables.fixedHeader.min.js"></script> 
+<script src="js/dataTables.responsive.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/bootstrap-editable/bootstrap-editable.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="plugins/ckeditor/ckeditor.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+<!-- upload Preview js 
+<script type="text/javascript" src="plugins/jquery.uploadPreview.min.js"></script> -->
+<!-- The File Upload audio preview plugin -->
+<script src="plugins/jquery.fileupload-audio.js"></script>
+<script>
+var anchorResponses = [];
+var tabID = 1;
+$(document).ready(function() {
+var anchorQuesTxt='';
+
+$('.ques-click').click(function() {
+tabID++;
+var editorText = 'test';//CKEDITOR.instances.comment.getData();
+
+if (anchorResponses.length < 5) {
+var anchorResponse = new AnchorResponse(tabID,editorText);
+anchorResponses.push(anchorResponse);
+renderAnchorResponses();
+} else {
+alert('Only 5 Anchor Responses can be added');
+}
+});
+
+});
+
+function renderAnchorResponses() {
+$("#ques-print").text('');
+$.each(anchorResponses, function( index, achorResponse ) {
+console.log(achorResponse.getAnchorText());							
+anchorQuesTxt="<div id='anchorQuestag"+achorResponse.getId()+"'>"+'<span class="anchor-count">'+(index+1)+'</span><span class="ques-print"><div id="note" data-pk="1" data-type="CKEDITOR" data-toggle="manual" data-title="Enter notes" data-placement="top" class="editable" tabindex="-1" data-original-title="" title="" style="background-color: rgba(0, 0, 0, 0);">'+achorResponse.getAnchorText()+'</div></span><span class="del-ques pull-right"><i class="fa fa-trash-o" aria-hidden="true" onclick="removeAnchorResponseById('+ achorResponse.getId() +')"></i></span><span class="edit-ques pull-right"><a href="javascript:void(0);" id="edit-ques"><i  class="fa fa-pencil" aria-hidden="true"></i></a></span></div>';
+$("#ques-print").append(anchorQuesTxt); 
+});
+}
+
+function removeAnchorResponseById(id){
+var updatedAnchorResponses = [];
+$.each(anchorResponses, function( index, achorResponse ) {
+if(achorResponse.getId() != id){
+updatedAnchorResponses.push(achorResponse)
+}
+});
+anchorResponses = updatedAnchorResponses;
+renderAnchorResponses();
+}
+
+function AnchorResponse(id, anchorText) {
+var id = id;
+var anchorText = anchorText;
+
+this.setAnchorText = function(text) {
+anchorText = text;
+};
+
+this.getAnchorText = function() {
+return anchorText;
+};
+
+this.setId = function(id) {
+id = id;
+};
+
+this.getId = function() {
+return id;
+};
+
+}
+</script> 
+
+<script language="javascript">
+$( function()
+{
+    var targets = $( '[rel~=tooltip]' ),
+        target  = false,
+        tooltip = false,
+        title   = false;
+ 
+    targets.bind( 'mouseenter', function()
+    {
+        target  = $( this );
+        tip     = target.attr( 'title' );
+        tooltip = $( '<div id="tooltip"></div>' );
+ 
+        if( !tip || tip == '' )
+            return false;
+ 
+        target.removeAttr( 'title' );
+        tooltip.css( 'opacity', 0 )
+               .html( tip )
+               .appendTo( 'body' );
+ 
+        var init_tooltip = function()
+        {
+            if( $( window ).width() < tooltip.outerWidth() * 1.5 )
+                tooltip.css( 'max-width', $( window ).width() / 2 );
+            else
+                tooltip.css( 'max-width', 340 );
+ 
+            var pos_left = target.offset().left + ( target.outerWidth() / 2 ) - ( tooltip.outerWidth() / 2 ),
+                pos_top  = target.offset().top - tooltip.outerHeight() - 20;
+ 
+            if( pos_left < 0 )
+            {
+                pos_left = target.offset().left + target.outerWidth() / 2 - 20;
+                tooltip.addClass( 'left' );
+            }
+            else
+                tooltip.removeClass( 'left' );
+ 
+            if( pos_left + tooltip.outerWidth() > $( window ).width() )
+            {
+                pos_left = target.offset().left - tooltip.outerWidth() + target.outerWidth() / 2 + 20;
+                tooltip.addClass( 'right' );
+            }
+            else
+                tooltip.removeClass( 'right' );
+ 
+            if( pos_top < 0 )
+            {
+                var pos_top  = target.offset().top + target.outerHeight();
+                tooltip.addClass( 'top' );
+            }
+            else
+                tooltip.removeClass( 'top' );
+ 
+            tooltip.css( { left: pos_left, top: pos_top } )
+                   .animate( { top: '+=10', opacity: 1 }, 50 );
+        };
+ 
+        init_tooltip();
+        $( window ).resize( init_tooltip );
+ 
+        var remove_tooltip = function()
+        {
+            tooltip.animate( { top: '-=10', opacity: 0 }, 50, function()
+            {
+                $( this ).remove();
+            });
+ 
+            target.attr( 'title', tip );
+        };
+ 
+        target.bind( 'mouseleave', remove_tooltip );
+        tooltip.bind( 'click', remove_tooltip );
+    });
+});
+</script>
+
+<script language="javascript">
+function show(target) {
+    document.getElementById(target).style.display = 'block';
+}
+function hide(target) {
+    document.getElementById(target).style.display = 'none';
+}
+</script>
+
+</body></html>

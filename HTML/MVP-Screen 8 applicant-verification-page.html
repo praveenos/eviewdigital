@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Evue</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="css/intlTelInput.css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="comp-header">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="comp-logo"><img class="img-responsive" src="images/logo_applicant_topnav.png"></div>
+    </div>
+    
+	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    <div class="comp-contact pull-right">
+    <p><strong>For any support contact:</strong></p>
+    <h5>+ 91 9341 555 666 | <a href="mailto:care@evueme.com">care@evueme.com</a></h5>
+    <p><strong>Timing:</strong> 07:00 hrs to 22:00hrs</p>
+    </div>
+    </div>
+    
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 background-grey mt-150 p-bt-80 p-top-40">
+<div class="thankYou primary-form row">
+
+<h3 class="text-center title-aplicant-verify bracket-color"><strong>Applicant Verification</strong></h3>
+
+<div class="col-md-12 p-bt-20">
+<h4>Confirm Mobile</h4>
+<input id="phone" type="text" value="Enter 10 digit mobile no." class="no-border-radius" onBlur="if(this.value==''){this.value='Enter 10 digit mobile no.'}" onFocus="if(this.value=='Enter 10 digit mobile no.'){this.value=''}">
+</div>
+
+<div class="col-md-12">
+<h4>Confirm DOB</h4>
+<div id="datetimepicker4" class="input-group date form-group">
+<input type="text" class="form-control no-border-radius" data-format="yyyy-MM-dd" id='datetimepicker4' placeholder="DD MM YY" />
+<span class="input-group-addon">
+<i class="fa fa-calendar" aria-hidden="true"></i>
+</span>
+</div>
+</div>
+
+<div class="col-md-5 p-bt-30 p-top-20"><button type="button" class="button bt-main" onClick="myFunction()"><span>GENERATE OTP</span>&nbsp;</button></div>
+<div class="col-md-5 p-bt-30 p-top-20"><button type="button" class="button bt-main"><span>Re-Send OTP</span></button></div>
+
+<div id="myDIV" style="display:none;">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-30" >
+	<h4>Enter the 6-digit OTP code sent on your mobile</h4>
+	</div>
+
+	<div class="col-md-9 pull-left">
+	<input type="text" name="otp" value="3" style="width:50px;">
+	<input type="text" name="otp" value="A" style="width:50px;">
+	<input type="text" name="otp" value="5" style="width:50px;">
+	<input type="text" name="otp" value="8" style="width:50px;">
+	<input type="text" name="otp" value="9" style="width:50px;">
+	<input type="text" name="otp" value="2" style="width:50px;">
+	</div>
+	
+	<div class="col-md-3 pull-left txt-black">1:25</div>
+	
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 p-top-30">
+	<span><i class="fa fa-check" aria-hidden="true"></i>&nbsp; Verified</span>
+	</div>
+	
+	<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-10">
+	<label class="checkbox-inline"><input type="checkbox" value="" checked="checked">I accept the <a href="#" class="blue-links">Terms & Conditions</a></label>
+	</div>-->
+	
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-10"><button type="button" class="button bt-main" style="width:100%;"><span>ACCEPT TERMS OF USE</span></button></div>
+</div>
+
+</div>   
+</div>
+</div>
+</div>
+
+		
+<div class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+
+<div class="col-md-5 pull-right text-right">
+Powered by: <img src="images/logo_ft.png" class="img-responsive">
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+function myFunction() {
+var x = document.getElementById('myDIV');
+if (x.style.display === 'none') {
+x.style.display = 'block';
+} else {
+x.style.display = 'none';
+}
+}
+</script>
+<script src="js/intlTelInput.js"></script>
+<script>
+$("#phone").intlTelInput({
+utilsScript:"js/utils.js"
+});
+</script>
+</body>
+</html>

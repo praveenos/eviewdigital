@@ -1,0 +1,573 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+/* common css starts */
+.whiteBg { background:#FFF;}
+button, button:hover, button:focus, button:active { background:#000; border:none !important; border-radius: 0 !important; border-radius: 0px !important;}
+.img_center { margin:0 auto;}
+.centerSpan { display:block;}
+.modal-header .close { background:none !important;}
+.small_text { font-size:10px;}
+/* common css ends */
+
+/* header portion starts */
+.topHeader {border-bottom: 3px solid #000; min-height: 62px;}
+/* header portion ends */
+
+/* interview complete page starts */
+.interview_complete { background:#f8f8f8; padding:19px 48px 28px; margin-top:30px;}
+.support { padding: 15px 0px;}
+/* interview complete page starts */
+
+/* thank you page starts */
+.thankYou { margin-top: 80px;}
+.thankYou img { margin:0 auto; width:82px;}
+.thankYou p:nth-child(5) { margin-top:25px;}
+.thankYou p:nth-child(6) { margin-bottom:20px;}
+.thankYou p:nth-child(8) { margin-top:20px;}
+.thankYou button {     background: #44103a; border:none;}
+.thankFooter p, a { color:#7d7d7d !important;}
+.thankFooter { margin-top:35px; margin-bottom:20px;}
+.thankFooter img{width: 87px;}
+/* thank you page ends */
+
+.terms {background: #fff; padding: 0px 21px; overflow:auto; margin-bottom: 24px;}
+.btn-sm:hover { background:#333;}
+.btn-sm { background-color:#000; border:none; padding:8px 20px;}
+.termsCancel { margin-left:25px; background:#929292; margin-right:15px;}
+.terms button{margin-top:15px;}
+#accept {background: #fff; padding: 15px 45px;}
+.terms textarea { border:none; width: 100%; padding: 0 20px; min-height: 400px; margin-bottom: 18px;}	
+.terms input { vertical-align:top;}
+.nicescroll-cursors {background-color: rgb(84, 84, 84) !important;}
+.btn-group-lg>.btn, .btn-lg {padding: 8px 10px; font-size: 12px;}
+.btn-group-lg>.btn, .btn-lg:hover {padding: 8px 10px;}
+.modal-header { border-bottom:none !important;}
+.modal-body { padding-top:0 !important;}
+
+/* common classes Starts */
+.no-margin { margin:0 !important;}
+.no-padding { padding:0;}
+
+/*[class*="col-"] > div:last-child { padding-right:0;}*/
+.mt-30 { margin-top:30px;}
+.mt-5 {margin-top:5px;}
+.mt-10 {margin-top:10px;}
+.navbar, button { text-transform:uppercase;}
+.input-group-addon {border-radius: 0px;}
+.btn-primary { color: #fff; background: #47143d; border:none; border-radius: 0; padding: 6px 30px;}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #47143d; border:none !important;}
+/* common classes Ends */
+
+/* primary content starts */
+.primary-cont { background:#f5f5f5; padding:40px 0 35px;}
+.secondary-cont { background:#fafafa; padding:40px 0 35px; margin-top:20px;}
+.primary-cont h4, .secondary-cont h4 { color:#000; font-weight:400; font-size:16px;}
+.primary-form, .primary-date-picker, .primary-data-table { padding:0 30px; margin-top: 35px;}
+.primary-data-table { margin-top:50px;}
+.primary-form h4, .primary-date-picker h4 { color:#878787; font-size:14px;}
+.primary-form a { text-decoration: none;}
+.primary-form input, .primary-form button { width:100%; padding: 6px 10px; border: 1px solid #c7c7c7; text-transform:none;}
+.caret{ margin-top: 9px; float:right;}
+.dropdown-menu-item { width:100% !important; min-width:inherit; border-radius: 0 !important; border: 1px solid #c7c7c7;}
+.primary-date-picker { margin-top:10px;}
+.primary-date-picker ul li { background:#cfd1d3; min-width:60px;}
+.primary-data-table thead { background: #f1f1f1; font-weight:normal;}
+.primary-data-table th {font-weight:normal !important; color:#585858 !important;}
+.primary-data-table table.dataTable { border-collapse: collapse;}
+.primary-data-table table.dataTable thead th, table.dataTable thead td { border-bottom:none;}
+.primary-data-table table.dataTable tbody th, table.dataTable tbody td { padding: 8px 17px;}
+.primary-data-table input { margin-right:8px; vertical-align:top;}
+/* primary content ends */
+
+/*Geetha codes Starts*/
+#templogo_jobposition {
+    width: 125px;
+}
+.topHeader {
+       border-bottom: 3px solid #d0d0d0;
+    min-height: 62px;
+    background: white;
+}
+.blue-links
+{
+    color: #3c6ea0 !important;
+    font-weight: bold;
+        text-decoration: none !important;
+		border-bottom: 1px solid;
+
+}
+p, a {
+    color: #807e7e !important;
+}
+.dis-inline
+{
+	display: inline !important;
+}
+.mt-100
+{
+	
+	    margin-top: 100px;
+}
+.mt-60
+{
+	
+	    margin-top: 60px;
+}
+.mt-10
+{
+    margin-top: 10px;	
+
+}
+.background-grey
+{
+	    background: #f5f5f5;
+		padding: 36px; display:table;
+}
+.title-aplicant-verify
+{
+  font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.button-gray
+{
+	    background: #b1b1b1 !important;
+}
+.fa.fa-check
+{
+    color: #0fc83e;
+    font-size: 22px;
+	
+}
+.fa.fa-asterisk
+{       color: rgba(255, 73, 0, 0.93);
+    font-size: 8px;
+    margin-left: 2px;
+	}
+.mt-n15
+{    margin-top: -39px;
+    font-size: large;
+    color: #b57b30;}
+input[type="checkbox"]
+{
+	
+width:auto !important;
+}
+.mt-20
+{
+	margin-top: 20px !important;
+}
+code {
+    padding: 2px 4px;
+    font-size: 118%;
+    color: #cdb287;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.col-t
+{
+       color: #d4b687 !important;
+    font-size: 20px;	
+
+}
+.black-title
+{
+	    font-size: 16px;
+    color: black !important;
+}
+.title-10
+{
+	    color: #d4b687;
+    font-size: 21px;
+}
+.pad-15
+{
+	
+	padding:15px;
+}
+.no-border-radius
+{
+	    border-radius: 0px;
+}
+.padding-left-none
+{
+	
+	padding-left: 0;
+}
+.background-button-grey
+{
+	background: #a9acae !important;
+}
+	.pad-left
+	{    
+	padding: 6px ;
+    padding-left: 15px ;
+	}
+	.font-size-blw-btn
+	{    font-size: 10px;}
+	
+.job-head-content
+{
+	text-transform: none;
+    color: black;
+}
+.job-head-content-num
+{
+	text-transform: none;
+    color:#bd9d5b;
+}
+.pd
+{
+	    padding-left: 15px;
+        margin: 0;
+	}
+	.p-color{
+		font-size: 14px;
+    font-weight: bold;
+        color: #333333 !important;
+	}
+	.ft-size
+	{
+		font-size: 22px;
+	}
+	.dup-primary-form
+	{
+		 padding: 6px 10px;
+		 
+		 text-transform:none;
+	}
+.pd-50
+{
+	padding-left: 50px;
+}
+.pd-left-30
+  {
+	 padding-left: 30px; 
+  }
+.pd-lr
+{
+	padding-left: 70px;
+    padding-right: 70px;
+}
+#test.fa.fa-asterisk
+{
+    color: #807e7e;
+    font-size: 8px;
+    margin-left: 2px;
+    font-style: italic;
+	padding-left: 11px;
+}
+.mr-ft-size
+{
+  margin-top: 20px;
+    font-size: 11px;
+}
+.mt-15
+{
+	margin-top: 15px;
+	}
+	.p-color
+	{
+		    color: 430f39 !important;
+	}
+	.pt-lr-100
+	{
+		padding-left: 50px;
+        padding-right: 50px;
+	}
+	.mb-50
+	{
+		margin-bottom: 50px;
+	}
+	.mt-50
+	{
+		    margin-top: 50px;
+	}
+	.p-black-color
+	{
+		color:black !important;
+        font-size: 14px !important;
+	}
+	.col-y
+	{   
+	    color: #d4b687 !important;
+		}
+	.ft-12
+		{
+			font-size: 12px;
+			
+		}
+	.resume-content
+	{
+		
+		background: #47143d;
+    color: white;
+    padding: 50px;
+	}
+	.padding-right-left-100
+	{
+		    padding-left: 100px;
+            padding-right: 100px;
+	}
+	.btn-bdr
+	{
+	border: 1px solid white !important;
+	}
+	.btn-bdr:hover
+	{
+		border: 1px solid white !important;
+	}
+	.ul-square
+	{
+		list-style-type: square;
+	}
+	.ft-sz
+	{
+		font-size:13px;
+	}
+	.ft-15
+	{
+		font-size: 15px;
+	}
+	.video-container-hgt
+	{
+		min-height: 180px;
+	}
+	.video-page-title
+	{
+		color:#a7a7a7;
+	}
+	.video-page-boder-right
+	{
+		border-right: 1px solid #ddd;
+	}
+	.video-page-title-color
+	{
+	 color: #505050;
+	}
+	
+	.pd-left-right-15
+	{
+		padding-left: 15px;
+       padding-right: 15px;
+	}
+	.flt-right
+	{    
+	float: right;
+	}
+	.video-question-ft
+	{
+		color: #b38f43 !important;
+       font-size: 18px
+	}
+	.width-200
+	{
+		width: 200px;
+	}
+	.mb-25
+	{
+		margin-bottom: 25px;
+	}
+	.width-250
+{
+	width: 250px;
+}
+   .width-100
+   {
+	   width:100px !important;
+   }
+.background-pink
+{
+	background-color: #491740;
+	
+}
+.ft-color-white
+{
+	color: #ffffff !important;
+	}
+	.pd-top-bottom-50
+	{
+		padding-top: 50px;
+        padding-bottom: 50px;
+	}
+	.background-button-yellow
+	{
+		background-color: #b69349;
+	}
+	.background-button-yellow:hover
+	{
+		background-color: #b69349 !important;
+	}
+	
+	.hm-bg {
+    position: relative;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      padding-bottom: 65px;
+    
+   
+   }
+   .hm-bg1 {
+    position: relative;
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding-bottom: 30px;
+    
+   
+   }
+   .bracket-color
+   {
+	   color:black;
+   }
+   .text-indent-40
+   {
+	   text-indent: 40px;
+   }
+   .margin-left-90
+   {
+	   margin-left: 90px;
+   }
+   .mailer-btn-style
+   {
+	   height: 45px;
+	   font-size: large
+   }
+   .ft-color-red
+   {
+	   color:red;
+   }
+   textarea.form-control 
+   {
+    resize: none !important;
+}
+ .border-radius-30
+ {
+	 border-radius:30px;
+ }
+ .label-style
+ {
+	 
+    background-color: #f6f7f7;
+    color: #626061;
+	padding: 10px;
+ }
+ .label-style:hover
+ {
+	 background-color:#e5e6e7;
+ }
+ .face-label-style
+ {
+	 background-color:#e5e6e7;
+	 color: #626061;
+	 padding: 10px;
+ }
+ .sound-label-style
+ {
+	 color: #626061;
+	 padding: 6px;
+	 
+ }
+ .ft-18
+ {
+	 font-size:18px;
+ }
+ .width-50
+ {
+	 width:50px;
+ }
+ .pd-top-20
+ {
+	 padding-top:20px;
+ }
+ .image-height-300
+ {
+	 width:100%;
+ }
+ .bdr-right
+{
+border-right: 8px solid rgba(128, 128, 128, 0.36);
+}
+.bdr-btm
+{
+border-bottom: 1px solid #ccc;
+}
+.width-50-per
+{
+	width:50%;
+}
+.mb-10
+{
+	margin-bottom:10px;
+}
+
+@media only screen and (max-width: 767px)
+{
+#bg-gry.background-grey
+{
+      background: rgb(222, 222, 222);
+    padding: 10px;
+    height: 700px;	
+}
+.mt-100
+{
+	
+	    margin-top: 0px;
+}
+#bg-pink.background-pink
+ {
+    background-color: #491740;
+    min-height: 750px;
+ }
+.no-padding 
+
+{
+	padding:15px !important;
+}
+.padding-left-none {
+    padding-left: 0;
+    padding-right: 0;
+}
+.text-center-responsive
+{
+text-align:center;
+}
+.padding-right-left-100 
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.media-margin-top
+{
+	margin-top:20px
+}
+.primary-form input, .primary-form button {
+    width: 100%;
+    padding: 6px 6px;
+    border: 1px solid #c7c7c7;
+    text-transform: none;
+}
+}
+@media only screen and (max-width: 992px)
+{
+	.bdr-right
+{
+border-right: 8px solid transparent;
+}
+.pt-lr-100
+ {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+}
+/*Geetha codes ends*/

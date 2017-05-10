@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>evueMe</title>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div class="comp-header">
+<div class="container-fluid">
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <div class="comp-logo"><img class="img-responsive" src="images/logo_applicant_topnav.png"></div>
+    </div>
+    
+	<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    <div class="comp-contact pull-right">
+    <p><strong>For any support contact:</strong></p>
+    <h5>+ 91 9341 555 666 | <a href="mailto:care@evueme.com">care@evueme.com</a></h5>
+    <p><strong>Timing:</strong> 07:00 hrs to 22:00hrs</p>
+    </div>
+    </div>
+    
+</div>
+</div>
+</div>
+   
+<div class="container-fluid m-top-50 p-lt-50 p-rt-50" style="margin-top:50px;"> 
+<div class="row count">
+<div class="questions1 txt-black">
+
+	<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 m-top-100">
+	<p class="m-bt-30">&lt; Video Response Question &gt;</p>
+	<h2 class="video-question-ft"><img src="images/icons/question-icon.png">&nbsp;Practice Question 1 of 3</h2>
+	<h3 class="p-top-20">What quality do you hate most in people? Why? </h3>
+	<p class="font-18">What do you do when you are confronted with it?</p>
+	</div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 m-top-30 p-rt-0 video-panel">
+	<div style="width:95%;margin:100px auto;">
+		<div class="pull-left video-page-title"><strong>Time Allowed:</strong><span class="clr-black"> 3 minutes</span></div>
+		<div class="text-right p-bt-10" style="color:red">Recording will start now</div>
+		<div class="clearfix"></div>
+
+		<div style="width:100%;height:500px;background:#000;">
+			<div class="recording">3-1 START</div>
+			<div id="recording-now"><div class="recording-red"></div><br>Recording Now</div>			
+		</div>
+
+		<div class="m-center col-xs-12 col-sm-6 col-md-6 col-lg-6 p-top-50 p-lt-0">
+		
+		<button type="button" class="button bt-main"><span>VIEW RECORDING</span>&nbsp;</button>
+		<button type="button" class="button bt-main" title="You have 2 more attempts left for this practice question." rel="tooltip"><span>RECORD AGAIN</span></button>
+		</div>
+
+		<div class="video-next-prev col-xs-12 col-sm-6 col-md-6 col-lg-6 p-top-50 p-rt-0">
+			<button type="button" class="button bt-main"><span>PREVIOUS</span></button>&nbsp;<button type="button" class="button bt-main"><span>NEXT QUESTION</span></button>
+		</div>
+	</div>
+</div>
+
+</div><!--end question1 -->
+</div>
+</div>
+
+<div class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12">
+
+<div class="col-md-5 pull-right text-right">
+Powered by: <img src="images/logo_ft.png" class="img-responsive">
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script>
+/* previous next question  */
+$(document).ready(function(){
+
+/* Button navigation starts */
+  var divs = $('.count>div');
+  var now = 0; // currently shown div
+  divs.hide().first().show();
+  $("button[name=next]").click(function (e) {
+	divs.eq(now).hide();
+	now = (now + 1 < divs.length) ? now + 1 : 0;
+	divs.eq(now).show(); // show next
+  });
+  $("button[name=prev]").click(function (e) {
+	divs.eq(now).hide();
+	now = (now > 0) ? now - 1 : divs.length - 1;
+	divs.eq(now).show(); 
+  });
+/* Button navigation ends */
+});
+</script>
+
+<script language="javascript">
+$( function()
+{
+    var targets = $( '[rel~=tooltip]' ),
+        target  = false,
+        tooltip = false,
+        title   = false;
+ 
+    targets.bind( 'mouseenter', function()
+    {
+        target  = $( this );
+        tip     = target.attr( 'title' );
+        tooltip = $( '<div id="tooltip"></div>' );
+ 
+        if( !tip || tip == '' )
+            return false;
+ 
+        target.removeAttr( 'title' );
+        tooltip.css( 'opacity', 0 )
+               .html( tip )
+               .appendTo( 'body' );
+ 
+        var init_tooltip = function()
+        {
+            if( $( window ).width() < tooltip.outerWidth() * 1.5 )
+                tooltip.css( 'max-width', $( window ).width() / 2 );
+            else
+                tooltip.css( 'max-width', 340 );
+ 
+            var pos_left = target.offset().left + ( target.outerWidth() / 2 ) - ( tooltip.outerWidth() / 2 ),
+                pos_top  = target.offset().top - tooltip.outerHeight() - 20;
+ 
+            if( pos_left < 0 )
+            {
+                pos_left = target.offset().left + target.outerWidth() / 2 - 20;
+                tooltip.addClass( 'left' );
+            }
+            else
+                tooltip.removeClass( 'left' );
+ 
+            if( pos_left + tooltip.outerWidth() > $( window ).width() )
+            {
+                pos_left = target.offset().left - tooltip.outerWidth() + target.outerWidth() / 2 + 20;
+                tooltip.addClass( 'right' );
+            }
+            else
+                tooltip.removeClass( 'right' );
+ 
+            if( pos_top < 0 )
+            {
+                var pos_top  = target.offset().top + target.outerHeight();
+                tooltip.addClass( 'top' );
+            }
+            else
+                tooltip.removeClass( 'top' );
+ 
+            tooltip.css( { left: pos_left, top: pos_top } )
+                   .animate( { top: '+=10', opacity: 1 }, 50 );
+        };
+ 
+        init_tooltip();
+        $( window ).resize( init_tooltip );
+ 
+        var remove_tooltip = function()
+        {
+            tooltip.animate( { top: '-=10', opacity: 0 }, 50, function()
+            {
+                $( this ).remove();
+            });
+ 
+            target.attr( 'title', tip );
+        };
+ 
+        target.bind( 'mouseleave', remove_tooltip );
+        tooltip.bind( 'click', remove_tooltip );
+    });
+});
+</script>
+</body></html>
