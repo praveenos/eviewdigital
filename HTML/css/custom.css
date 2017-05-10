@@ -312,7 +312,7 @@ li.active-menu2 .fa-sticky-note, li.active-menu2 .fa-book, li.active-menu2 .fa-f
 .responce-time { margin-bottom:115px;}
 .anchor-responce input { width:auto;}
 .anchor-responce p { margin-left: 16px;}
-.get-text ul li{display:inline-block;background:#e6e6e6;padding:5px 19px;margin-right:9px;margin-bottom:7px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;}
+.get-text ul li{display:inline-block;background:#e6e6e6;padding:5px 19px;margin-right:7px;margin-bottom:7px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;}
 .get-text ul li span{position:relative;top:-5px;font-size:12px;right:-10px;}
 .get-text ul li span a{text-decoration:none;}
 .anchor-print-text span { color:#000; padding-right: 50px;}
@@ -740,7 +740,9 @@ footer p:first-child img { width:130px;}
 .btn-purple{background:#47143d;color:#fff;padding:10px 20px; font-size:16px; text-transform:uppercase; border:none}
 .ui-dialog{z-index:1000 !important;}
 #competency1,#competency2,#competency3,#competency4,#competency5,#competency6,#competency7,#competency8,#competency9,#competency10{display:inline-block;}
-#assessor1,#assessor2,#assessor3,#assessor4,#assessor5,#assessor6,#assessor7,#assessor8,#assessor9,#assessor10{display:inline-block;}
+#assessor1,#assessor2,#assessor3,#assessor4,#assessor5,#assessor6,#assessor7{display:inline-block;}
+#skill1,#skill2,#skill3,#skill4,#skill5,#skill6,#skill7,#skill8,#skill9,#skill10{display:inline-block;}
+
 .terms_cont{padding:3em 3em 0 3em;}
 
 
